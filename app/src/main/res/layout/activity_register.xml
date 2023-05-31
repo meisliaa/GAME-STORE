@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
 
     <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView_form"
+            android:id="@+id/textView_form1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTRASI"
@@ -28,17 +28,17 @@
             android:textSize="25dp"/>
 
         <TextView
-            android:id="@+id/textView_nama"
+            android:id="@+id/textView_form2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Nama Lengkap"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTop="parent" />
+            tools:layout_editor_absoluteY="93dp"  />
 
         <EditText
-            android:id="@+id/nama"
+            android:id="@+id/editText1"
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -165,6 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
+            android:onClick="login"
             android:layout_gravity="center"/>
 
     </LinearLayout>
